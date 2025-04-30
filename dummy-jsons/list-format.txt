@@ -1,0 +1,59 @@
+❮ yt-dlp --list-formats -s "https://www.youtube.com/watch?v=I07IQ5j85iA"
+[youtube] Extracting URL: https://www.youtube.com/watch?v=I07IQ5j85iA
+[youtube] I07IQ5j85iA: Downloading webpage
+[youtube] I07IQ5j85iA: Downloading tv client config
+[youtube] I07IQ5j85iA: Downloading player fded239a
+[youtube] I07IQ5j85iA: Downloading tv player API JSON
+[youtube] I07IQ5j85iA: Downloading ios player API JSON
+[youtube] I07IQ5j85iA: Downloading m3u8 information
+[info] Available formats for I07IQ5j85iA:
+ID      EXT   RESOLUTION FPS CH │   FILESIZE   TBR PROTO │ VCODEC          VBR ACODEC      ABR ASR MORE INFO
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+sb3     mhtml 48x27        0    │                  mhtml │ images                                  storyboard
+sb2     mhtml 80x45        0    │                  mhtml │ images                                  storyboard
+sb1     mhtml 160x90       0    │                  mhtml │ images                                  storyboard
+sb0     mhtml 320x180      0    │                  mhtml │ images                                  storyboard
+233     mp4   audio only        │                  m3u8  │ audio only          unknown             [en] Default, low
+234     mp4   audio only        │                  m3u8  │ audio only          unknown             [en] Default, high
+249-drc webm  audio only      2 │    2.24MiB   52k https │ audio only          opus        52k 48k [en] low, DRC, webm_dash
+250-drc webm  audio only      2 │    2.86MiB   66k https │ audio only          opus        66k 48k [en] low, DRC, webm_dash
+249     webm  audio only      2 │    2.20MiB   51k https │ audio only          opus        51k 48k [en] low, webm_dash
+250     webm  audio only      2 │    2.86MiB   66k https │ audio only          opus        66k 48k [en] low, webm_dash
+140-drc m4a   audio only      2 │    5.62MiB  129k https │ audio only          mp4a.40.2  129k 44k [en] medium, DRC, m4a_dash
+251-drc webm  audio only      2 │    5.10MiB  117k https │ audio only          opus       117k 48k [en] medium, DRC, webm_dash
+140     m4a   audio only      2 │    5.62MiB  129k https │ audio only          mp4a.40.2  129k 44k [en] medium, m4a_dash
+251     webm  audio only      2 │    5.08MiB  117k https │ audio only          opus       117k 48k [en] medium, webm_dash
+602     mp4   256x144     15    │ ~  3.82MiB   88k m3u8  │ vp09.00.10.08   88k video only
+269     mp4   256x144     30    │ ~  7.85MiB  181k m3u8  │ avc1.4D400C    181k video only
+160     mp4   256x144     30    │    3.17MiB   73k https │ avc1.4d400c     73k video only          144p, mp4_dash
+603     mp4   256x144     30    │ ~  6.87MiB  158k m3u8  │ vp09.00.11.08  158k video only
+278     webm  256x144     30    │    3.44MiB   79k https │ vp9             79k video only          144p, webm_dash
+394     mp4   256x144     30    │    3.20MiB   74k https │ av01.0.00M.08   74k video only          144p, mp4_dash
+229     mp4   426x240     30    │ ~ 13.68MiB  315k m3u8  │ avc1.4D4015    315k video only
+133     mp4   426x240     30    │    6.66MiB  153k https │ avc1.4d4015    153k video only          240p, mp4_dash
+604     mp4   426x240     30    │ ~ 11.48MiB  265k m3u8  │ vp09.00.20.08  265k video only
+242     webm  426x240     30    │    5.88MiB  135k https │ vp9            135k video only          240p, webm_dash
+395     mp4   426x240     30    │    5.65MiB  130k https │ av01.0.00M.08  130k video only          240p, mp4_dash
+230     mp4   640x360     30    │ ~ 27.23MiB  628k m3u8  │ avc1.4D401E    628k video only
+134     mp4   640x360     30    │   12.23MiB  282k https │ avc1.4d401e    282k video only          360p, mp4_dash
+18      mp4   640x360     30  2 │   14.30MiB  329k https │ avc1.42001E         mp4a.40.2       22k [en] 360p
+605     mp4   640x360     30    │ ~ 20.51MiB  473k m3u8  │ vp09.00.21.08  473k video only
+243     webm  640x360     30    │   10.14MiB  233k https │ vp9            233k video only          360p, webm_dash
+396     mp4   640x360     30    │    9.55MiB  220k https │ av01.0.01M.08  220k video only          360p, mp4_dash
+231     mp4   854x480     30    │ ~ 40.35MiB  930k m3u8  │ avc1.4D401F    930k video only
+135     mp4   854x480     30    │   22.19MiB  511k https │ avc1.4d401f    511k video only          480p, mp4_dash
+606     mp4   854x480     30    │ ~ 30.20MiB  696k m3u8  │ vp09.00.30.08  696k video only
+244     webm  854x480     30    │   16.43MiB  378k https │ vp9            378k video only          480p, webm_dash
+397     mp4   854x480     30    │   14.07MiB  324k https │ av01.0.04M.08  324k video only          480p, mp4_dash
+232     mp4   1280x720    30    │ ~ 70.97MiB 1636k m3u8  │ avc1.64001F   1636k video only
+136     mp4   1280x720    30    │   41.71MiB  961k https │ avc1.64001f    961k video only          720p, mp4_dash
+609     mp4   1280x720    30    │ ~ 46.43MiB 1070k m3u8  │ vp09.00.31.08 1070k video only
+247     webm  1280x720    30    │   27.85MiB  641k https │ vp9            641k video only          720p, webm_dash
+398     mp4   1280x720    30    │   25.22MiB  581k https │ av01.0.05M.08  581k video only          720p, mp4_dash
+270     mp4   1920x1080   30    │ ~122.30MiB 2818k m3u8  │ avc1.640028   2818k video only
+137     mp4   1920x1080   30    │   78.89MiB 1817k https │ avc1.640028   1817k video only          1080p, mp4_dash
+614     mp4   1920x1080   30    │ ~ 67.06MiB 1545k m3u8  │ vp09.00.40.08 1545k video only
+248     webm  1920x1080   30    │   45.51MiB 1048k https │ vp9           1048k video only          1080p, webm_dash
+399     mp4   1920x1080   30    │   39.65MiB  913k https │ av01.0.08M.08  913k video only          1080p, mp4_dash
+616     mp4   1920x1080   30    │ ~185.09MiB 4265k m3u8  │ vp09.00.40.08 4265k video only          Premium
+
