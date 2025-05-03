@@ -57,44 +57,52 @@
 
 ### Some notes
 
-```json
-<!-- entries format -->
-{
-  "_type": "url",
-  "ie_key": "Youtube",
-  "id": "iOdJOTtukaE",
-  "url": "https://www.youtube.com/watch?v=iOdJOTtukaE",
-  "title": "I Slept On The Floor Every Night For A Week",
-  "description": "Are there amazing benefits to sleeping on the floor? That's what I wanted to find out so I decided to sleep on the floor for 7 nights. I discovered some things I was not expecting! Did I fall...",
-  "duration": 1607.0,
-  "channel_id": "UCTBjtACFlDmd-g6Gtva9biQ",
-  "channel": "pigmie",
-  "channel_url": "https://www.youtube.com/channel/UCTBjtACFlDmd-g6Gtva9biQ",
-  "uploader": "pigmie",
-  "uploader_id": "@FocusedLucas",
-  "uploader_url": "https://www.youtube.com/@FocusedLucas",
-  "thumbnails": [
-    {
-      "url": "https://i.ytimg.com/vi/iOdJOTtukaE/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCR5DmB8ZeGlnASAe7gxM-76LdVfg",
-      "height": 202,
-      "width": 360
-    },
-    {
-      "url": "https://i.ytimg.com/vi/iOdJOTtukaE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDSppnHKTlX0x-x7IisG_FUdmwWAw",
-      "height": 404,
-      "width": 720
-    }
-  ],
-  "timestamp": null,
-  "release_timestamp": null,
-  "availability": null,
-  "view_count": 1788846,
-  "live_status": null,
-  "channel_is_verified": true,
-  "__x_forwarded_for_ip": null
-}
-```
+```sh Data Formats
+## Your Feed
+## /feed/recommended works too
+yt-dlp https://www.youtube.com -J --flat-playlist --extractor-args "youtubetab:approximate_date" --playlist-start 1 --playlist-end 30 --cookies-from-browser "chrome:Profile_1"
+
+feed/history/subscription/search/liked_video/trending/explore
+https://www.youtube.com/results?search_query={query}
+
+.entries | map(keys) | unique
+"__x_forwarded_for_ip"
+"_type"
+"availability",
+"channel",
+"channel_id",
+"channel_is_verified",
+"channel_url",
+"description",
+"duration",
+"id",
+"ie_key",
+"live_status",
+"release_timestamp",
+"thumbnails",
+"timestamp",
+"title",
+"uploader",
+"uploader_id",
+"uploader_url",
+"url",
+"view_count"
+
+
+use diff for these :
+playlist
+channel
+https://www.youtube.com/feed/channels - channel list
+
+
+
+yt-dlp https://www.youtube.com/feed/recommended -J --flat-playlist --extractor-args "youtubetab:approximate_date" --playlist-start 1 --playlist-end 30 --cookies-from-browser "chrome:Profile_1"
+
+
 
 ## Helpful stuff
 
 `--mark-watched`
+
+
+```
